@@ -10,3 +10,7 @@
     color: white;
     font-weight: bold;
 }
+
+.sidebar div span {
+    cursor: pointer;
+}

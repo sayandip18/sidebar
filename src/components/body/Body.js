@@ -6,10 +6,24 @@ import Home from '../pages/home/Home';
 
 import './Body.css';
 
-function Body() {
+function Body({home, about, contact, feedback}) {
+    let result;
+
+    if(home) {
+        result = <Home />
+    }
+    if(about) {
+        result = <About />
+    }
+    if(contact) {
+        result = <Contact />
+    }
+    if(feedback) {
+        result = <Feedback />
+    }
     return (
         <div className="body">
-            <Feedback />
+            {result}
         </div>
     )
 }
