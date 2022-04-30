@@ -1,4 +1,12 @@
 .sidebar{
     width: 30%;
     background-color: #0000f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar div{
+    color: white;
+    font-weight: bold;
 }
